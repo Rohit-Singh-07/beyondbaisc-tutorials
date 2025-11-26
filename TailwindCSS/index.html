@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tailwind Fan</title>
+
+<!-- Tailwind CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+    @keyframes spinFan {
+        from { transform: rotate(0deg); }
+        to { transform: rotate(360deg); }
+    }
+
+    .spin {
+        animation: spinFan 0.5s linear infinite;
+    }
+</style>
+</head>
+
+<body class="bg-gray-100 flex flex-col items-center pt-16">
+
+    <h2 class="text-2xl font-semibold mb-6">Fan On/Off (Tailwind Version)</h2>
+
+    <!-- FAN -->
+    <div id="fan" class="relative flex items-center justify-center
+w-40 h-40 border-8 border-gray-700 rounded-full">
+
+        <!-- Blades -->
+        <div class="absolute w-20 h-2 bg-gray-600 rounded-full"></div>
+        <div class="absolute w-20 h-2 bg-gray-600 rounded-full rotate-[120deg]"></div>
+        <div class="absolute w-20 h-2 bg-gray-600 rounded-full rotate-[240deg]"></div>
+    </div>
+
+    <!-- Button -->
+    <button onclick="toggleFan()"
+        class="mt-6 px-6 py-2 bg-blue-600 text-white text-lg rounded 
+               hover:bg-blue-700 transition">
+        Toggle fan
+    </button>
+
+<script>
+let spinning = false;
+
+function toggleFan() {
+    const fan = document.getElementById("fan");
+
+    if (spinning) {
+        fan.classList.remove("spin");
+        spinning = false;
+    } else {
+        fan.classList.add("spin");
+        spinning = true;
+    }
+}
+</script>
+
+</body>
+</html>

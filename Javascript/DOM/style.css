@@ -1,0 +1,8 @@
+@keyframes spinFan {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+.spin {
+    animation: spinFan 0.5s linear infinite;
+}

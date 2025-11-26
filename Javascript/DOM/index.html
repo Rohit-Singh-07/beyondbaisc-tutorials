@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="w-full h-[100vh] flex flex-col justify-center items-center pt-16 gap-10"
+  >
+    <h1 class="text-6xl">My Fan</h1>
+    
+    <div
+      id="fan"
+      class="relative flex intems-center justify-center w-40 h-40 border-8 rounded-full"
+    >
+      <div
+        class="absolute w-20 h-2 rounded-full bg-black -translate-x-[50%] left-[50%] -translate-y-[50%] top-[50%]"
+      ></div>
+      <div
+        class="absolute w-20 h-2 rounded-full bg-black -translate-x-[50%] left-[50%] -translate-y-[50%] top-[50%] rotate-[120deg]"
+      ></div>
+      <div
+        class="absolute w-20 h-2 rounded-full bg-black -translate-x-[50%] left-[50%] -translate-y-[50%] top-[50%] rotate-[240deg]"
+      ></div>
+    </div>
+
+    <button
+      onclick="toggleFan()"
+      class="border rounded-full px-6 py-2 bg-blue-500 text-white text-3xl"
+    >
+      Toggle Fan
+    </button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

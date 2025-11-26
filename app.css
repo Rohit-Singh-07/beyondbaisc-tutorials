@@ -1,0 +1,38 @@
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+#blue {
+    color: blue;
+}
+
+.red{
+    color: red;
+}
+
+#div1{
+    background-color: blueviolet;
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    left: 100px;
+    top: 100px;
+    position: absolute;
+}
+
+* {
+    color: red;
+}
+
+#sec1{
+    background-color: rgb(74, 186, 148);
+    height: 100vh;
+}
+
+#sec2{
+    background-color: rgb(143, 122, 40);
+    height: 100vh;
+    position: relative;
+}

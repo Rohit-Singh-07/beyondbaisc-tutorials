@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Metadata Section -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Complete HTML Lecture Notes with Examples"
+    />
+    <meta
+      name="keywords"
+      content="HTML, Web Development, Lecture Notes, Tutorial, Example"
+    />
+    <meta name="author" content="Your Name" />
+    <meta http-equiv="refresh" content="3600" />
+    <link
+      rel="icon"
+      href="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+    />
+
+    <title>Complete HTML Lecture Notes with Examples</title>
+  </head>
+  <body>
+    <hr />
+
+    <!-- ==================== 1. INTRODUCTION ==================== -->
+    <h2>1. Introduction to HTML</h2>
+    <p>
+      <b>HTML (HyperText Markup Language)</b> is the standard language for
+      creating webpages. It uses <i>tags</i> to structure and organize content.
+    </p>
+    <p>
+      HTML files always begin with a <b>Document Type Declaration</b> (<code
+        >&lt;!DOCTYPE html&gt;</code
+      >).
+    </p>
+
+    <pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;My First Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+    </pre>
+
+    <hr />
+    <!-- ==================== 2. HEAD SECTION DETAILS ==================== -->
+    <h2>2. The &lt;head&gt; Section</h2>
+    <p>
+      The head contains metadata and information that is not directly displayed.
+    </p>
+    <ul>
+      <li>
+        <b>&lt;meta&gt;</b> — Defines metadata such as encoding, description,
+        keywords.
+      </li>
+      <li>
+        <b>&lt;title&gt;</b> — Defines the title displayed in the browser tab.
+      </li>
+      <li>
+        <b>&lt;link&gt;</b> — Connects external resources like icons or CSS.
+      </li>
+      <li>
+        <b>&lt;script&gt;</b> — Links JavaScript files or includes inline
+        scripts.
+      </li>
+    </ul>
+
+    <hr />
+    <!-- ==================== 3. HEADINGS AND PARAGRAPHS ==================== -->
+    <h2>3. Headings and Paragraphs</h2>
+    <p>
+      There are six heading tags from <code>&lt;h1&gt;</code> to
+      <code>&lt;h6&gt;</code>.
+    </p>
+
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <p>
+      Paragraphs are created using <code>&lt;p&gt;</code> tag. Line breaks can
+      be added using <code>&lt;br&gt;</code>.
+    </p>
+
+    <hr />
+    <!-- ==================== 4. TEXT FORMATTING ==================== -->
+    <h2>4. Text Formatting Tags</h2>
+    <p>HTML provides various tags to style text meaningfully:</p>
+    <ul>
+      <li><b>Bold:</b> &lt;b&gt; or &lt;strong&gt;</li>
+      <li><i>Italic:</i> &lt;i&gt; or &lt;em&gt;</li>
+      <li><u>Underline:</u> &lt;u&gt;</li>
+      <li><mark>Mark/Highlight:</mark> &lt;mark&gt;</li>
+      <li><small>Small Text:</small> &lt;small&gt;</li>
+      <li><del>Deleted Text:</del> &lt;del&gt;</li>
+      <li><ins>Inserted Text:</ins> &lt;ins&gt;</li>
+      <li>Superscript: 2&lt;sup&gt;3&lt;/sup&gt; = 2<sup>3</sup></li>
+      <li>Subscript: H&lt;sub&gt;2&lt;/sub&gt;O = H<sub>2</sub>O</li>
+    </ul>
+
+    <hr />
+    <!-- ==================== 5. LISTS ==================== -->
+    <h2>5. Lists</h2>
+    <h3>Ordered List (Numbered)</h3>
+    <ol type="1">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ol>
+
+    <h3>Unordered List (Bulleted)</h3>
+    <ul type="square">
+      <li>Apple</li>
+      <li>Mango</li>
+      <li>Banana</li>
+    </ul>
+
+    <h3>Definition List</h3>
+    <dl>
+      <dt>HTML</dt>
+      <dd>Defines the structure of webpages</dd>
+      <dt>CSS</dt>
+      <dd>Defines the styling of webpages</dd>
+    </dl>
+
+    <hr />
+    <!-- ==================== 6. LINKS ==================== -->
+    <h2>6. Hyperlinks (Anchor Tag)</h2>
+    <p>The <code>&lt;a&gt;</code> tag creates hyperlinks.</p>
+    <a href="https://www.google.com" target="_blank">Visit Google</a><br />
+    <a href="#footer">Go to Bottom</a><br />
+    <a href="mailto:example@example.com">Send Email</a>
+
+    <hr />
+    <!-- ==================== 7. IMAGES ==================== -->
+    <h2>7. Images</h2>
+    <p>Images are inserted using the <code>&lt;img&gt;</code> tag.</p>
+    <pre>
+&lt;img src="image.jpg" alt="Description" width="200" height="150"&gt;
+    </pre>
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
+      alt="HTML Logo"
+      width="100"
+    />
+
+    <hr />
+    <!-- ==================== 8. TABLES ==================== -->
+    <h2>8. Tables</h2>
+    <p>Tables display data in rows and columns.</p>
+    <pre>
+&lt;table border="1"&gt;
+  &lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;/tr&gt;
+  &lt;tr&gt;&lt;td&gt;Alice&lt;/td&gt;&lt;td&gt;22&lt;/td&gt;&lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+
+    <table border="1" cellpadding="5" cellspacing="0">
+      <caption>
+        <b>Student Information</b>
+      </caption>
+      <tr>
+        <th>Roll No</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Marks</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>John</td>
+        <td>20</td>
+        <td>85</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Mary</td>
+        <td>22</td>
+        <td>90</td>
+      </tr>
+    </table>
+
+    <hr />
+    <!-- ==================== 9. FORMS ==================== -->
+    <h2>9. Forms (User Input)</h2>
+    <p>Forms collect input data from users.</p>
+
+    <form action="#" method="get">
+      <label>Name:</label>
+      <input type="text" name="name" /><br /><br />
+      <label>Email:</label>
+      <input type="email" name="email" /><br /><br />
+      <label>Password:</label>
+      <input type="password" name="pass" /><br /><br />
+      <label>Gender:</label>
+      <input type="radio" name="gender" />Male
+      <input type="radio" name="gender" />Female<br /><br />
+      <label>Hobbies:</label>
+      <input type="checkbox" />Reading
+      <input type="checkbox" />Traveling<br /><br />
+      <label>Country:</label>
+      <select>
+        <option>India</option>
+        <option>USA</option>
+        <option>UK</option></select
+      ><br /><br />
+      <label>Comments:</label><br />
+      <textarea rows="4" cols="40"></textarea><br /><br />
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset" />
+    </form>
+
+    <hr />
+    <!-- ==================== 10. MULTIMEDIA ==================== -->
+    <h2>10. Multimedia Elements</h2>
+    <h3>Audio Example:</h3>
+    <audio controls>
+      <source src="sample.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h3>Video Example:</h3>
+    <video width="320" height="240" controls>
+      <source src="sample.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <hr />
+    <!-- ==================== 11. SEMANTIC ELEMENTS ==================== -->
+    <h2>11. Semantic Elements</h2>
+    <p>Semantic elements give meaning to content:</p>
+    <ul>
+      <li>&lt;header&gt;</li>
+      <li>&lt;nav&gt;</li>
+      <li>&lt;section&gt;</li>
+      <li>&lt;article&gt;</li>
+      <li>&lt;aside&gt;</li>
+      <li>&lt;footer&gt;</li>
+    </ul>
+
+    <header>
+      <h3>Header Section</h3>
+    </header>
+    <nav>
+      <a href="#">Home</a> | <a href="#">About</a> |
+      <a href="#">Contact</a>
+    </nav>
+    <section>
+      <article>
+        <h4>HTML5 Article Example</h4>
+        <p>This content is inside a semantic article tag.</p>
+      </article>
+    </section>
+    <aside>
+      <p>This is sidebar content.</p>
+    </aside>
+    <footer id="footer">
+      <p>© 2025 HTML Lecture Notes</p>
+    </footer>
+
+    <hr />
+    <!-- ==================== 12. IFRAME ==================== -->
+    <h2>12. Iframes</h2>
+    <p>
+      The <code>&lt;iframe&gt;</code> tag embeds another page within a page.
+    </p>
+    <iframe src="https://www.wikipedia.org" width="400" height="200"></iframe>
+
+    <hr />
+    <!-- ==================== 13. CANVAS ==================== -->
+    <h2>13. Canvas (Drawing Shapes)</h2>
+    <p>
+      The <code>&lt;canvas&gt;</code> element allows drawing graphics using
+      JavaScript.
+    </p>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="150"
+      style="border: 1px solid black"
+    ></canvas>
+
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "blue";
+      ctx.fillRect(50, 50, 100, 50);
+      ctx.beginPath();
+      ctx.arc(100, 75, 30, 0, 2 * Math.PI);
+      ctx.stroke();
+    </script>
+
+    <hr />
+    <!-- ==================== 14. ENTITIES ==================== -->
+    <h2>14. HTML Entities & Symbols</h2>
+    <ul>
+      <li>&lt; = &amp;lt;</li>
+      <li>&gt; = &amp;gt;</li>
+      <li>&amp; = &amp;amp;</li>
+      <li>© = &amp;copy;</li>
+      <li>® = &amp;reg;</li>
+      <li>₹ = &amp;#8377;</li>
+      <li>→ = &amp;rarr;</li>
+      <li>← = &amp;larr;</li>
+      <li>↑ = &amp;uarr;</li>
+      <li>↓ = &amp;darr;</li>
+    </ul>
+
+    <hr />
+    <!-- ==================== 15. BLOCK VS INLINE ==================== -->
+    <h2>15. Block vs Inline Elements</h2>
+    <p>
+      <b>Block Elements:</b> Start on a new line (e.g., &lt;div&gt;, &lt;p&gt;,
+      &lt;table&gt;)
+    </p>
+    <p>
+      <b>Inline Elements:</b> Continue on the same line (e.g., &lt;span&gt;,
+      &lt;a&gt;, &lt;img&gt;)
+    </p>
+
+    <div>This is a block element.</div>
+    <span>This is inline 1</span>
+    <span>This is inline 2</span>
+
+    <hr />
+    <!-- ==================== 16. COMMENTS ==================== -->
+    <h2>16. Comments</h2>
+    <pre>
+&lt;!-- This is a comment in HTML --&gt;
+    </pre>
+
+    <hr />
+    <!-- ==================== 17. COMPUTER CODE ELEMENTS ==================== -->
+    <h2>17. Computer Code Tags</h2>
+    <ul>
+      <li>&lt;code&gt; - Inline code snippet</li>
+      <li>&lt;pre&gt; - Preformatted text</li>
+      <li>&lt;kbd&gt; - Keyboard input</li>
+      <li>&lt;samp&gt; - Sample output</li>
+      <li>&lt;var&gt; - Variable</li>
+    </ul>
+
+    <p>Example:</p>
+    <pre>
+To print Hello World:
+&lt;code&gt;console.log("Hello World");&lt;/code&gt;
+Keyboard Shortcut: &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;S&lt;/kbd&gt;
+    </pre>
+
+    <hr />
+    <!-- ==================== 18. DETAILS & SUMMARY ==================== -->
+    <h2>18. &lt;details&gt; and &lt;summary&gt;</h2>
+    <details>
+      <summary>Click to Expand</summary>
+      <p>This text is hidden until you click the summary.</p>
+    </details>
+
+    <hr />
+    <!-- ==================== 19. PROGRESS & METER ==================== -->
+    <h2>19. Progress and Meter</h2>
+    <p>Download Progress:</p>
+    <progress value="70" max="100"></progress>
+    <p>Battery Level:</p>
+    <meter value="0.8">80%</meter>
+
+    <hr />
+  </body>
+</html>
